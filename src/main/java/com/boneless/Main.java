@@ -41,7 +41,11 @@ public class Main extends JFrame implements KeyListener {
     private void run(){
         while(running){
             //
-
+            try{
+                Thread.sleep(1000);
+            }catch(InterruptedException e){
+                e.printStackTrace();
+            }
         }
     }
     @Override
